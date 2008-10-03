@@ -1,0 +1,239 @@
+qbzr
+------------------------------------------
+A simple Qt cross-platform frontend for some of Bazaar commands
+
+Purpose of this plugin is to provide a graphical user interface for 
+those Bazaar commands where it can simplify the usage. Highlighting of 
+differences between files, browsable log view, possibility to commit 
+only some files without listing them all on the command line, etc.
+
+On the other hand, it's not intended to be a full-featured application 
+with GUI for all Bazaar operations.
+
+Runtime requirements:
+  bzr-1.7.1-1
+  python-2.5.2-3
+  python-enchant-1.4.2-1
+  python-pygments-0.11.1-1
+  python-qt4-4.4.3-1
+
+Build requirements:
+(besides corresponding -devel packages)
+  autoconf2.5-2.61-1
+  automake1.10-1.10.1-1
+  binutils-20080624-2
+  bison-2.3-1
+  cygport-0.4.0-1
+  flex-2.5.35-1
+  gawk-3.1.6-1
+  gcc-core-3.4.4-3
+  libtool-2.2.2-2
+  make-3.81-1
+  pkg-config-0.23a-2
+  sed-4.1.5-2
+
+Canonical website:
+  http://bazaar-vcs.org/QBzr
+
+Canonical download:
+  https://launchpad.net/qbzr/trunk/
+
+-------------------------------------------
+
+Build instructions:
+  unpack qbzr-0.9.4-X-src.tar.bz2
+    if you use setup to install this src package, it will be
+	 unpacked under /usr/src automatically
+  cd /usr/src
+  cygport ./qbzr-0.9.4-X.cygport all
+
+This will create:
+  /usr/src/qbzr-0.9.4-X-src.tar.bz2
+  /usr/src/qbzr-0.9.4-X.tar.bz2
+
+-------------------------------------------
+
+Files included in the binary package:
+
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/add.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/add.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/add.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/annotate.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/annotate.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/annotate.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/autocomplete.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/autocomplete.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/autocomplete.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/browse.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/browse.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/browse.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/cat.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/cat.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/cat.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commands.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commands.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commands.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commit.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commit.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/commit.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/config.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/config.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/config.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diff.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diff.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diff.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diffview.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diffview.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/diffview.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isignored.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isignored.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isignored.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isversioned.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isversioned.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/extra/isversioned.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getnew.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getnew.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getnew.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getupdates.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getupdates.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/getupdates.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/help.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/help.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/help.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/i18n.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/i18n.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/i18n.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/info.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/info.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/info.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/init.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/init.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/init.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/log.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/log.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/log.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/logmodel.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/logmodel.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/logmodel.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/main.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/main.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/main.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/pull.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/pull.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/pull.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/resources.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/resources.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/resources.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/revert.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/revert.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/revert.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck_enchant.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck_enchant.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/spellcheck_enchant.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/statuscache.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/statuscache.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/statuscache.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_autocomplete.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_autocomplete.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_autocomplete.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_diffview.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_diffview.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_diffview.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isignored.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isignored.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isignored.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_util.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_util.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_util.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_bookmark.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_bookmark.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_bookmark.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_branch.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_branch.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_branch.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_info.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_info.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_info.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_init.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_init.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_init.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_merge.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_merge.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_merge.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_new_tree.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_new_tree.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_new_tree.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_pull.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_pull.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_pull.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_checkout.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_checkout.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_checkout.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/util.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/util.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/util.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/wtlist.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/wtlist.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/wtlist.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/de/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/es/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/fr/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/gl/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/it/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/ja/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/nl/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/pt_BR/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/ru/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/sk/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/sv/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/uk/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/qbzr-0.9.4-py2.5.egg-info
+  /usr/share/doc/qbzr-0.9.4/AUTHORS.txt
+  /usr/share/doc/qbzr-0.9.4/COPYING.txt
+  /usr/share/doc/qbzr-0.9.4/NEWS.txt
+  /usr/share/doc/qbzr-0.9.4/README.txt
+  /usr/share/doc/qbzr-0.9.4/TODO.txt
+
+------------------
+
+Port Notes:
+
+----- version 0.9.4-1 -----
+Initial release for Cygwin.
+
+
+Cygwin port maintained by:
+http://sourceware.org/cygwinports/
