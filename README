@@ -11,26 +11,15 @@ On the other hand, it's not intended to be a full-featured application
 with GUI for all Bazaar operations.
 
 Runtime requirements:
-  bzr-1.7.1-1
-  python-2.5.2-3
-  python-enchant-1.4.2-1
-  python-pygments-0.11.1-1
+  bzr-1.10-1
+  python-2.5.2-4
+  python-enchant-1.5.0-1
+  python-pygments-1.0-1
   python-qt4-4.4.3-1
 
 Build requirements:
-(besides corresponding -devel packages)
-  autoconf2.5-2.61-1
-  automake1.10-1.10.1-1
-  binutils-20080624-2
-  bison-2.3-1
-  cygport-0.4.0-1
-  flex-2.5.35-1
-  gawk-3.1.6-1
-  gcc-core-3.4.4-3
-  libtool-2.2.2-2
-  make-3.81-1
-  pkg-config-0.23a-2
-  sed-4.1.5-2
+  cygport-0.4.3-1
+  python-2.5.2-4
 
 Canonical website:
   http://bazaar-vcs.org/QBzr
@@ -41,15 +30,15 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack qbzr-0.9.4-X-src.tar.bz2
+  unpack qbzr-0.9.5-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./qbzr-0.9.4-X.cygport all
+  cygport ./qbzr-0.9.5-X.cygport all
 
 This will create:
-  /usr/src/qbzr-0.9.4-X-src.tar.bz2
-  /usr/src/qbzr-0.9.4-X.tar.bz2
+  /usr/src/qbzr-0.9.5-X-src.tar.bz2
+  /usr/src/qbzr-0.9.5-X.tar.bz2
 
 -------------------------------------------
 
@@ -148,6 +137,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/subprocess.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tag.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tag.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tag.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/__init__.pyo
@@ -163,9 +155,15 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_extra_isversioned.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_i18n.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_i18n.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_i18n.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_logmodel.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_qbzr.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_qbzr.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_qbzr.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/tests/test_spellcheck.pyo
@@ -196,6 +194,9 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_push.pyo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_tag.py
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_tag.pyc
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_tag.pyo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.py
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.pyc
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/lib/ui_update_branch.pyo
@@ -219,17 +220,21 @@ Files included in the binary package:
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/ru/LC_MESSAGES/qbzr.mo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/sk/LC_MESSAGES/qbzr.mo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/sv/LC_MESSAGES/qbzr.mo
+  /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/tr/LC_MESSAGES/qbzr.mo
   /usr/lib/python2.5/site-packages/bzrlib/plugins/qbzr/locale/uk/LC_MESSAGES/qbzr.mo
-  /usr/lib/python2.5/site-packages/qbzr-0.9.4-py2.5.egg-info
-  /usr/share/doc/qbzr-0.9.4/AUTHORS.txt
-  /usr/share/doc/qbzr-0.9.4/COPYING.txt
-  /usr/share/doc/qbzr-0.9.4/NEWS.txt
-  /usr/share/doc/qbzr-0.9.4/README.txt
-  /usr/share/doc/qbzr-0.9.4/TODO.txt
+  /usr/lib/python2.5/site-packages/qbzr-0.9.5-py2.5.egg-info
+  /usr/share/doc/qbzr-0.9.5/AUTHORS.txt
+  /usr/share/doc/qbzr-0.9.5/COPYING.txt
+  /usr/share/doc/qbzr-0.9.5/NEWS.txt
+  /usr/share/doc/qbzr-0.9.5/README.txt
+  /usr/share/doc/qbzr-0.9.5/TODO.txt
 
 ------------------
 
 Port Notes:
+
+----- version 0.9.5-1 -----
+Version bump.
 
 ----- version 0.9.4-1 -----
 Initial release for Cygwin.
