@@ -1,5 +1,5 @@
 category: Devel
-requires: bzr python python-enchant python-pygments python-qt4
+requires: bzr python python-enchant python-pygments python-pyqt4
 sdesc: "Qt4 GUI for some Bazaar commands"
 ldesc: "A simple Qt cross-platform frontend for some of Bazaar commands
 
