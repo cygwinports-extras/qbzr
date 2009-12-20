@@ -11,14 +11,14 @@ On the other hand, it's not intended to be a full-featured application
 with GUI for all Bazaar operations.
 
 Runtime requirements:
-  bzr-1.17-2
+  bzr-2.0.0-2
   python-2.5.4-10
   python-enchant-1.5.3-1
-  python-pygments-1.0-1
-  python-pyqt4-4.5.2-1
+  python-pygments-1.1.1-1
+  python-pyqt4-4.5.4-1
 
 Build requirements:
-  cygport-0.9.9-1
+  cygport-0.9.10-1
   gettext-devel-0.17-11
   python-2.5.4-10
 
@@ -31,19 +31,22 @@ Canonical download:
 -------------------------------------------
 
 Build instructions:
-  unpack qbzr-0.14-X-src.tar.bz2
+  unpack qbzr-0.17-X-src.tar.bz2
     if you use setup to install this src package, it will be
 	 unpacked under /usr/src automatically
   cd /usr/src
-  cygport ./qbzr-0.14-X.cygport all
+  cygport ./qbzr-0.17-X.cygport all
 
 This will create:
-  /usr/src/qbzr-0.14-X-src.tar.bz2
-  /usr/src/qbzr-0.14-X.tar.bz2
+  /usr/src/qbzr-0.17-X-src.tar.bz2
+  /usr/src/qbzr-0.17-X.tar.bz2
 
 -------------------------------------------
 
 Port Notes:
+
+----- version 0.17-1 -----
+Version bump.
 
 ----- version 0.14-1 -----
 Initial release for Cygwin 1.7.
