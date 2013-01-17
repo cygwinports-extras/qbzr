@@ -1,8 +1,0 @@
-inherit distutils
-
-DESCRIPTION="Qt4 GUI for Bazaar"
-HOMEPAGE="http://bazaar-vcs.org/QBzr"
-SRC_URI="https://launchpad.net/${PN}/${PV_MAJ_MIN}/${PV}/+download/${P}.tar.gz"
-SRC_DIR=${PN}
-
-DIFF_EXCLUDES="*.po"
